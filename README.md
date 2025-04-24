@@ -1,6 +1,6 @@
-# SemEval 2025 Task 7: Multi and Cross-lingual Information Retrieval using Bi-encoders
+# Multi and Cross-lingual Information Retrieval using Bi-encoders
 
-This project implements a bi-encoder based approach for multi-lingual and cross-lingual information retrieval for fact-check-claims across social media posts. It uses transformer-based models to encode queries and documents into a shared semantic space, enabling retrieval across different languages.
+This project implements a bi-encoder based approach for multi-lingual and cross-lingual information retrieval. It uses transformer-based models to encode queries and documents into a shared semantic space, enabling retrieval across different languages.
 
 ## Overview
 
@@ -104,13 +104,28 @@ For retrieval:
 4. Rank documents by similarity score
 5. Combine rankings from multiple models in ensemble
 
-## References
+## Prediction Models
 
-This implementation is based on research in:
-- Cross-lingual Information Retrieval
-- Dense Retrieval
-- Bi-encoder architectures
-- Transformer models
+The prediction notebooks (`predict-notebook-crosslingual.ipynb` and `predict-notebook-monolingual.ipynb`) use:
+
+- **Base Model**: `intfloat/multilingual-e5-large-instruct`
+  - A powerful multilingual transformer model
+  - Supports multiple languages for cross-lingual and monolingual retrieval
+  - Uses mean pooling for sentence embeddings
+  - Batch processing with efficient memory management
+  - Configurable sequence lengths (default: 768 tokens)
+
+## Model Weights
+
+To run predictions in your environment:
+
+1. Download our trained model weights from [Kaggle](https://www.kaggle.com/datasets/arkhamking/model-weights/data)
+2. The weights are publicly available and include:
+   - Monolingual model weights for language-specific retrieval
+   - Cross-lingual model weights for cross-language retrieval
+   - Different versions trained with various configurations
+
+Place the downloaded weights in a `model-weights` directory in your project root.
 
 ## License
 
