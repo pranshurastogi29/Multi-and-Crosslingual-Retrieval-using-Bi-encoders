@@ -1,6 +1,6 @@
-# Multi and Cross-lingual Information Retrieval using Bi-encoders
+# SemEval 2025 Task 7: Multi and Cross-lingual Information Retrieval using Bi-encoders
 
-This project implements a bi-encoder based approach for multi-lingual and cross-lingual information retrieval. It uses transformer-based models to encode queries and documents into a shared semantic space, enabling retrieval across different languages.
+This project implements a bi-encoder based approach for multi-lingual and cross-lingual information retrieval for fact-check-claims across social media posts. It uses transformer-based models to encode queries and documents into a shared semantic space, enabling retrieval across different languages.
 
 ## Overview
 
