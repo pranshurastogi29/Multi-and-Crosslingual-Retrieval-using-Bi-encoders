@@ -1,6 +1,6 @@
 # Multi and Cross-lingual Information Retrieval using Bi-encoders
 
-This project implements a bi-encoder based approach for multi-lingual and cross-lingual information retrieval. It uses transformer-based models to encode queries and documents into a shared semantic space, enabling retrieval across different languages.
+SemEval-2025 Task 7 Multilingual and Crosslingual Fact-checked Claim Retrieval is solved as a Learning-to-Rank task using a bi-encoder model that is finetuned on a pretrained transformer tuned for sentence similarity. Training utilized both source languages and English translations in Multilingual retrieval, and English translations for crosslingual retrieval. Using Lightweight models with fewer than 500M parameters and training on Kaggle T4 GPUs, the method attained 92% Success@10 on multilingual and 80% Success@10 on cross-lingual retrieval, ranking 5th in Crosslingual and 10th in Multilingual.
 
 ## Overview
 
